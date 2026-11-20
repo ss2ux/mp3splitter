@@ -198,7 +198,7 @@ fun SplitScreen() {
 
     LaunchedEffect(refreshTick) { loadFiles() }
 
-    Column(Modifier = Modifier.fillMaxSize()) {
+    Column(modifier = Modifier.fillMaxSize()) {
         // 상단 바
         Row(
             modifier = Modifier
@@ -378,7 +378,7 @@ fun FileCard(
                 tint = if (selected) MaterialTheme.colorScheme.primary else Color.Gray
             )
             Spacer(Modifier.size(12.dp))
-            Column(Modifier = Modifier.weight(1f)) {
+            Column(modifier = Modifier.weight(1f)) {
                 Text(
                     item.displayName,
                     fontWeight = FontWeight.Medium,
